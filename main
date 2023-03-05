@@ -1,0 +1,17 @@
+package ramy;
+
+public class main {
+
+	public static void main(String[] args) {
+		SIingleton obj=SIingleton.getInstace();
+		obj.printDetails("Hello Friends");
+		
+
+		
+		
+		
+		SIingleton obj1=SIingleton.getInstace();
+		obj1.printDetails("CS1");
+	}
+
+}
