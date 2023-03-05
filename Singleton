@@ -1,0 +1,27 @@
+package ramy;
+
+public class SIingleton {
+	 static int counter =0;
+	    private static SIingleton instance;
+	    private SIingleton()
+	    {
+	        counter++;
+	        System.err.println(counter);
+	    }
+	    void printDetails(String Message)
+	    {
+	        
+	        System.out.println(Message);
+	    }
+	    public static synchronized SIingleton getInstace()
+	    {
+	       if(instance==null) 
+	       {
+	        instance=new SIingleton();
+	           
+	       }
+	       return instance;
+	        
+	    }
+
+}
