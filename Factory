@@ -1,0 +1,42 @@
+public interface Shape {
+    void draw();
+}
+
+// Circle class implementing Shape interface
+public class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Circle drawn.");
+    }
+}
+
+// Square class implementing Shape interface
+public class Square implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Square drawn.");
+    }
+}
+
+// Triangle class implementing Shape interface
+public class Triangle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Triangle drawn.");
+    }
+}
+
+// ShapeFactory class with createShape factory method
+public class ShapeFactory {
+    public static Shape createShape(String type) {
+        if (type.equalsIgnoreCase("circle")) {
+            return new Circle();
+        } else if (type.equalsIgnoreCase("square")) {
+            return new Square();
+        } else if (type.equalsIgnoreCase("triangle")) {
+            return new Triangle();
+        } else {
+            throw new IllegalArgumentException("Invalid shape type.");
+        }
+    }
+}
