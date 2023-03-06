@@ -1,0 +1,11 @@
+public class Client {
+    public static void main(String[] args) {
+        Shape circle = ShapeFactory.createShape("circle");
+        Shape square = ShapeFactory.createShape("square");
+        Shape triangle = ShapeFactory.createShape("triangle");
+
+        circle.draw();   // output: Circle drawn.
+        square.draw();   // output: Square drawn.
+        triangle.draw(); // output: Triangle drawn.
+    }
+}
