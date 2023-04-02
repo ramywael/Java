@@ -1,0 +1,18 @@
+package team;
+
+public class WindowsDrawing implements DrawingA {
+
+	@Override
+	public void drawCircle(double x, double y, double radius) {
+System.out .println("Hello")		;
+	}
+
+	@Override
+	public void drawRechtangle(double x, double y, double side) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}
