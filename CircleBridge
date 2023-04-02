@@ -1,0 +1,27 @@
+package team;
+
+public class Circle implements Shape{
+
+	
+	
+	private int x,y,radius;
+	private DrawingA drawingA;
+	
+	
+	
+	public Circle(int x,int y,int radius,DrawingA drawingA)
+	{
+		
+		this.x=x;
+		this.y=y;
+		this.radius=radius;
+		this.drawingA=drawingA;
+	}
+	
+	@Override
+	public void draw() {
+		drawingA.drawCircle(x, y, radius);
+		System.out.println("Circle is drawn");
+	}
+
+}
