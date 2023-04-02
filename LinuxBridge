@@ -1,0 +1,18 @@
+package team;
+
+public class LinuxDrawing implements DrawingA{
+
+	@Override
+	public void drawCircle(double x, double y, double radius) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void drawRechtangle(double x, double y, double side) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
