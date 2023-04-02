@@ -1,0 +1,26 @@
+package team;
+
+public class Rechtangle implements Shape{
+
+	
+	
+	private int x,y,side;
+	private DrawingA drawingA;
+	
+	
+	
+	public Rechtangle(int x,int y,int side,DrawingA drawingA)
+	{
+		
+		this.x=x;
+		this.y=y;
+		this.side=side;
+		this.drawingA=drawingA;
+	}
+	
+	@Override
+	public void draw() {
+		drawingA.drawRechtangle(x, y, side);
+	}
+
+}
