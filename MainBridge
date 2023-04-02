@@ -1,0 +1,19 @@
+package team;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		DrawingA drawingAc= new WindowsDrawing();
+		DrawingA drawingAR= new LinuxDrawing();
+		
+		Shape Circle =new Circle(10, 20, 30, drawingAc);
+		Shape Rectangle=new Rechtangle(0, 0, 0, drawingAR);
+		
+		
+		Circle.draw();
+		
+		
+	}
+
+}
