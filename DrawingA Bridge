@@ -1,0 +1,6 @@
+package team;
+
+public interface DrawingA {
+void drawCircle(double x,double y,double radius);
+void drawRechtangle(double x,double y,double side);
+}
