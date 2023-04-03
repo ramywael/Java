@@ -1,0 +1,15 @@
+
+public class main {
+
+	public static void main(String[] args) {
+WeatherStation weatherStat=new WeatherStation();
+Observer website=new website();
+Observer MobileApp=new mobileApp();
+
+weatherStat.registerObserver(website);
+weatherStat.registerObserver(MobileApp);
+weatherStat.setMeasurements(10, 20, 30);
+
+	}
+
+}
