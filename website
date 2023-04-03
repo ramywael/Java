@@ -1,0 +1,11 @@
+
+public class website implements Observer {
+
+	@Override
+	public void update(int temperature, int humadity, int pressure) {
+		 System.out.println("Website: temperature = " + temperature + ", humidity = " + humadity + ", pressure = " + pressure);
+		
+	}
+	
+
+}
